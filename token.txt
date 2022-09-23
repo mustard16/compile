@@ -1,0 +1,84 @@
+using 'using'    [StartOfLine]  Loc=<fib.cpp:2:1>
+namespace 'namespace'    [LeadingSpace] Loc=<fib.cpp:2:7>
+identifier 'std'         [LeadingSpace] Loc=<fib.cpp:2:17>
+semi ';'                Loc=<fib.cpp:2:20>
+int 'int'        [StartOfLine]  Loc=<fib.cpp:5:1 <Spelling=fib.cpp:3:18>>
+identifier 'main'        [LeadingSpace] Loc=<fib.cpp:5:10>
+l_paren '('             Loc=<fib.cpp:5:14>
+r_paren ')'             Loc=<fib.cpp:5:15>
+l_brace '{'      [StartOfLine]  Loc=<fib.cpp:6:1>
+int 'int'        [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:7:5 <Spelling=fib.cpp:3:18>>
+identifier 'a'   [LeadingSpace] Loc=<fib.cpp:7:14>
+comma ','               Loc=<fib.cpp:7:15>
+identifier 'b'   [LeadingSpace] Loc=<fib.cpp:7:17>
+comma ','               Loc=<fib.cpp:7:18>
+identifier 'i'   [LeadingSpace] Loc=<fib.cpp:7:20>
+comma ','               Loc=<fib.cpp:7:21>
+identifier 't'   [LeadingSpace] Loc=<fib.cpp:7:23>
+comma ','               Loc=<fib.cpp:7:24>
+identifier 'n'   [LeadingSpace] Loc=<fib.cpp:7:26>
+semi ';'                Loc=<fib.cpp:7:27>
+identifier 'a'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:9:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:9:7>
+numeric_constant '0'     [LeadingSpace] Loc=<fib.cpp:9:9>
+semi ';'                Loc=<fib.cpp:9:10>
+identifier 'b'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:10:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:10:7>
+numeric_constant '1'     [LeadingSpace] Loc=<fib.cpp:10:9>
+semi ';'                Loc=<fib.cpp:10:10>
+identifier 'i'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:11:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:11:7>
+numeric_constant '1'     [LeadingSpace] Loc=<fib.cpp:11:9>
+semi ';'                Loc=<fib.cpp:11:10>
+identifier 'cin'         [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:12:5>
+greatergreater '>>'      [LeadingSpace] Loc=<fib.cpp:12:9>
+identifier 'n'   [LeadingSpace] Loc=<fib.cpp:12:12>
+semi ';'                Loc=<fib.cpp:12:13>
+identifier 'cout'        [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:13:5>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:13:10>
+identifier 'a'   [LeadingSpace] Loc=<fib.cpp:13:13>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:13:15>
+identifier 'endl'        [LeadingSpace] Loc=<fib.cpp:13:18>
+semi ';'                Loc=<fib.cpp:13:22>
+identifier 'cout'        [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:14:5>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:14:10>
+identifier 'b'   [LeadingSpace] Loc=<fib.cpp:14:13>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:14:15>
+identifier 'endl'        [LeadingSpace] Loc=<fib.cpp:14:18>
+semi ';'                Loc=<fib.cpp:14:22>
+while 'while'    [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:15:5>
+l_paren '('      [LeadingSpace] Loc=<fib.cpp:15:11>
+identifier 'i'          Loc=<fib.cpp:15:12>
+less '<'         [LeadingSpace] Loc=<fib.cpp:15:14>
+identifier 'n'   [LeadingSpace] Loc=<fib.cpp:15:16>
+r_paren ')'             Loc=<fib.cpp:15:17>
+l_brace '{'      [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:16:5>
+identifier 't'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:17:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:17:7>
+identifier 'b'   [LeadingSpace] Loc=<fib.cpp:17:9>
+semi ';'                Loc=<fib.cpp:17:10>
+identifier 'b'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:18:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:18:7>
+identifier 'a'   [LeadingSpace] Loc=<fib.cpp:18:9>
+plus '+'         [LeadingSpace] Loc=<fib.cpp:18:11>
+identifier 'b'   [LeadingSpace] Loc=<fib.cpp:18:13>
+semi ';'                Loc=<fib.cpp:18:14>
+identifier 'cout'        [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:19:5>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:19:10>
+identifier 'b'   [LeadingSpace] Loc=<fib.cpp:19:13>
+lessless '<<'    [LeadingSpace] Loc=<fib.cpp:19:15>
+identifier 'endl'        [LeadingSpace] Loc=<fib.cpp:19:18>
+semi ';'                Loc=<fib.cpp:19:22>
+identifier 'a'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:20:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:20:7>
+identifier 't'   [LeadingSpace] Loc=<fib.cpp:20:9>
+semi ';'                Loc=<fib.cpp:20:10>
+identifier 'i'   [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:21:5>
+equal '='        [LeadingSpace] Loc=<fib.cpp:21:7>
+identifier 'i'   [LeadingSpace] Loc=<fib.cpp:21:9>
+plus '+'         [LeadingSpace] Loc=<fib.cpp:21:11>
+numeric_constant '1'     [LeadingSpace] Loc=<fib.cpp:21:13>
+semi ';'                Loc=<fib.cpp:21:14>
+r_brace '}'      [StartOfLine] [LeadingSpace]   Loc=<fib.cpp:22:5>
+r_brace '}'      [StartOfLine]  Loc=<fib.cpp:24:1>
+eof ''          Loc=<fib.cpp:24:2>
