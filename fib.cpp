@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
-int main()
+#define Intreger int
+
+Intreger main()
 {
-    int a, b, i, t, n;
+    Intreger a, b, i, t, n;  //宏替换及注释删除
 
     a = 0;
     b = 1;
@@ -18,4 +20,5 @@ int main()
     a = t;
     i = i + 1;
     }
+
 }
