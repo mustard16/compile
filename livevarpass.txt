@@ -1,0 +1,139 @@
+# *** IR Dump After Live Variable Analysis (livevars) ***:
+# Machine code for function main: IsSSA, TracksLiveness
+Frame Objects:
+  fi#0: size=4, align=4, at location [SP+8]
+  fi#1: size=4, align=4, at location [SP+8]
+  fi#2: size=4, align=4, at location [SP+8]
+  fi#3: size=4, align=4, at location [SP+8]
+  fi#4: size=4, align=4, at location [SP+8]
+  fi#5: size=4, align=4, at location [SP+8]
+  fi#6: size=8, align=8, at location [SP+8]
+  fi#7: size=4, align=4, at location [SP+8]
+  fi#8: size=4, align=4, at location [SP+8]
+  fi#9: size=4, align=4, at location [SP+8]
+
+bb.0 (%ir-block.0):
+  successors: %bb.1
+
+  MOV32mi %stack.0, 1, $noreg, 0, $noreg, 0 :: (store (s32) into %ir.1)
+  MOV32mi %stack.1, 1, $noreg, 0, $noreg, 0 :: (store (s32) into %ir.2)
+  MOV32mi %stack.2, 1, $noreg, 0, $noreg, 1 :: (store (s32) into %ir.3)
+  MOV32mi %stack.3, 1, $noreg, 0, $noreg, 1 :: (store (s32) into %ir.4)
+  %14:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt3cin, $noreg
+  %15:gr64 = LEA64r %stack.5, 1, $noreg, 0, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %14:gr64
+  $rsi = COPY killed %15:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSirsERi, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $rsi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  dead %16:gr64 = COPY killed $rax
+  %13:gr32 = MOV32rm %stack.1, 1, $noreg, 0, $noreg :: (load (s32) from %ir.2)
+  %10:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4cout, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %10:gr64
+  $esi = COPY killed %13:gr32
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEi, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $esi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  %12:gr64 = COPY killed $rax
+  %8:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %12:gr64
+  $rsi = COPY killed %8:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEPFRSoS_E, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $rsi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  dead %9:gr64 = COPY killed $rax
+  %6:gr32 = MOV32rm %stack.2, 1, $noreg, 0, $noreg :: (load (s32) from %ir.3)
+  %3:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4cout, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %3:gr64
+  $esi = COPY killed %6:gr32
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEi, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $esi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  %5:gr64 = COPY killed $rax
+  %1:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %5:gr64
+  $rsi = COPY killed %1:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEPFRSoS_E, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $rsi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  dead %2:gr64 = COPY killed $rax
+
+bb.1 (%ir-block.18):
+; predecessors: %bb.0, %bb.2
+  successors: %bb.3, %bb.2
+
+  %19:gr32 = MOV32rm %stack.3, 1, $noreg, 0, $noreg :: (load (s32) from %ir.4)
+  CMP32rm killed %19:gr32, %stack.5, 1, $noreg, 0, $noreg, implicit-def $eflags :: (load (s32) from %ir.6)
+  JCC_1 %bb.3, 13, implicit killed $eflags
+
+bb.2 (%ir-block.22):
+; predecessors: %bb.1
+  successors: %bb.1
+
+  %50:gr32 = MOV32rm %stack.2, 1, $noreg, 0, $noreg :: (load (s32) from %ir.3)
+  MOV32mr %stack.4, 1, $noreg, 0, $noreg, killed %50:gr32 :: (store (s32) into %ir.5)
+  %48:gr32 = MOV32rm %stack.1, 1, $noreg, 0, $noreg :: (load (s32) from %ir.2)
+  %47:gr32 = ADD32rm killed %48:gr32(tied-def 0), %stack.2, 1, $noreg, 0, $noreg, implicit-def dead $eflags :: (load (s32) from %ir.3)
+  MOV32mr %stack.2, 1, $noreg, 0, $noreg, killed %47:gr32 :: (store (s32) into %ir.3)
+  %43:gr32 = MOV32rm %stack.2, 1, $noreg, 0, $noreg :: (load (s32) from %ir.3)
+  %40:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4cout, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %40:gr64
+  $esi = COPY killed %43:gr32
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEi, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $esi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  %42:gr64 = COPY killed $rax
+  %38:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZSt4endlIcSt11char_traitsIcEERSt13basic_ostreamIT_T0_ES6_, $noreg
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  $rdi = COPY killed %42:gr64
+  $rsi = COPY killed %38:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSolsEPFRSoS_E, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $rsi, implicit-def $rax
+  ADJCALLSTACKUP64 0, 0, implicit-def $rsp, implicit-def dead $eflags, implicit-def $ssp, implicit $rsp, implicit $ssp
+  dead %39:gr64 = COPY killed $rax
+  %36:gr32 = MOV32rm %stack.4, 1, $noreg, 0, $noreg :: (load (s32) from %ir.5)
+  MOV32mr %stack.1, 1, $noreg, 0, $noreg, killed %36:gr32 :: (store (s32) into %ir.2)
+  %34:gr32 = MOV32rm %stack.3, 1, $noreg, 0, $noreg :: (load (s32) from %ir.4)
+  %33:gr32 = ADD32ri8 killed %34:gr32(tied-def 0), 1, implicit-def dead $eflags
+  MOV32mr %stack.3, 1, $noreg, 0, $noreg, killed %33:gr32 :: (store (s32) into %ir.4)
+  JMP_1 %bb.1
+
+bb.3 (%ir-block.33):
+; predecessors: %bb.1
+  successors: %bb.4
+
+  MOV64mi32 %stack.6, 1, $noreg, 0, $noreg, 0 :: (store (s64) into %ir.7)
+  MOV32mi %stack.7, 1, $noreg, 0, $noreg, 0 :: (store (s32) into %ir.8)
+  MOV32mi %stack.9, 1, $noreg, 0, $noreg, 0 :: (store (s32) into %ir.10)
+
+bb.4 (%ir-block.34):
+; predecessors: %bb.3, %bb.6
+  successors: %bb.7, %bb.5
+
+  %24:gr32 = MOV32rm %stack.9, 1, $noreg, 0, $noreg :: (load (s32) from %ir.10)
+  %23:gr32 = IMUL32rm killed %24:gr32(tied-def 0), %stack.9, 1, $noreg, 0, $noreg, implicit-def dead $eflags :: (load (s32) from %ir.10)
+  CMP32ri8 killed %23:gr32, 100, implicit-def $eflags
+  JCC_1 %bb.7, 13, implicit killed $eflags
+
+bb.5 (%ir-block.39):
+; predecessors: %bb.4
+  successors: %bb.6
+
+  JMP_1 %bb.6
+
+bb.6 (%ir-block.40):
+; predecessors: %bb.5
+  successors: %bb.4
+
+  %30:gr32 = MOV32rm %stack.9, 1, $noreg, 0, $noreg :: (load (s32) from %ir.10)
+  %29:gr32 = ADD32ri8 killed %30:gr32(tied-def 0), 1, implicit-def dead $eflags
+  MOV32mr %stack.9, 1, $noreg, 0, $noreg, killed %29:gr32 :: (store (s32) into %ir.10)
+  JMP_1 %bb.4
+
+bb.7 (%ir-block.43):
+; predecessors: %bb.4
+
+  %26:gr32 = MOV32rm %stack.0, 1, $noreg, 0, $noreg :: (load (s32) from %ir.1)
+  $eax = COPY killed %26:gr32
+  RET64 implicit killed $eax
+
+# End machine code for function main.

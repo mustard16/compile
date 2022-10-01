@@ -21,4 +21,14 @@ Intreger main()
     i = i + 1;
     }
 
+    //创建未使用的变量和指针
+    int* q=nullptr;
+    int temp1=0;
+    int temp2;
+
+    //创建没用,不规范的循环
+    for(int j=0;j*j<100;j++)
+    {
+        continue;
+    }
 }

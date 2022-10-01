@@ -1,0 +1,130 @@
+# *** IR Dump Before Remove dead machine instructions (dead-mi-elimination) ***:
+# Machine code for function __cxx_global_var_init: IsSSA, TracksLiveness
+
+bb.0 (%ir-block.0):
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %0:gr64 = MOV32ri64 @_ZStL8__ioinit
+  $rdi = COPY %0:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit-def $rsp, implicit-def $ssp
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %1:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  %2:gr64 = MOV32ri64 @__dso_handle
+  $rdi = COPY %1:gr64
+  $rsi = COPY %0:gr64
+  $rdx = COPY %2:gr64
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit $rsi, implicit $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def $eax
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %3:gr32 = COPY $eax
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
+
+# *** IR Dump After Remove dead machine instructions (dead-mi-elimination) ***:
+# Machine code for function __cxx_global_var_init: IsSSA, TracksLiveness
+
+bb.0 (%ir-block.0):
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %0:gr64 = MOV32ri64 @_ZStL8__ioinit
+  $rdi = COPY %0:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit-def $rsp, implicit-def $ssp
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %1:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  %2:gr64 = MOV32ri64 @__dso_handle
+  $rdi = COPY %1:gr64
+  $rsi = COPY %0:gr64
+  $rdx = COPY %2:gr64
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit $rsi, implicit $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def $eax
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
+
+
+
+
+# *** IR Dump Before Live Variable Analysis (livevars) ***:
+# Machine code for function __cxx_global_var_init: IsSSA, TracksLiveness
+
+bb.0 (%ir-block.0):
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %0:gr64 = MOV32ri64 @_ZStL8__ioinit
+  $rdi = COPY %0:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit-def $rsp, implicit-def $ssp
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %1:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  %2:gr64 = MOV32ri64 @__dso_handle
+  $rdi = COPY %1:gr64
+  $rsi = COPY %0:gr64
+  $rdx = COPY %2:gr64
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit $rsi, implicit $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def $eax
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
+
+# *** IR Dump After Live Variable Analysis (livevars) ***:
+# Machine code for function __cxx_global_var_init: IsSSA, TracksLiveness
+
+bb.0 (%ir-block.0):
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %0:gr64 = MOV32ri64 @_ZStL8__ioinit
+  $rdi = COPY %0:gr64
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit-def $rsp, implicit-def $ssp
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  %1:gr64 = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  %2:gr64 = MOV32ri64 @__dso_handle
+  $rdi = COPY killed %1:gr64
+  $rsi = COPY killed %0:gr64
+  $rdx = COPY killed %2:gr64
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit killed $rdi, implicit killed $rsi, implicit killed $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def dead $eax
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
+
+
+
+# *** IR Dump Before Prologue/Epilogue Insertion & Frame Finalization (prologepilog) ***:
+# Machine code for function __cxx_global_var_init: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+
+bb.0 (%ir-block.0):
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  $rdi = MOV32ri64 @_ZStL8__ioinit
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit-def $rsp, implicit-def $ssp
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  ADJCALLSTACKDOWN64 0, 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  renamable $rdi = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  $rsi = MOV32ri64 @_ZStL8__ioinit
+  $rdx = MOV32ri64 @__dso_handle
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit killed $rsi, implicit killed $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def dead $eax
+  ADJCALLSTACKUP64 0, 0, implicit-def dead $rsp, implicit-def dead $eflags, implicit-def dead $ssp, implicit $rsp, implicit $ssp
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
+
+# *** IR Dump After Prologue/Epilogue Insertion & Frame Finalization (prologepilog) ***:
+# Machine code for function __cxx_global_var_init: NoPHIs, TracksLiveness, NoVRegs, TiedOpsRewritten, TracksDebugUserValues
+Frame Objects:
+  fi#-1: size=8, align=16, fixed, at location [SP-8]
+
+bb.0 (%ir-block.0):
+  frame-setup PUSH64r killed $rbp, implicit-def $rsp, implicit $rsp
+  CFI_INSTRUCTION def_cfa_offset 16
+  CFI_INSTRUCTION offset $rbp, -16
+  $rbp = frame-setup MOV64rr $rsp
+  CFI_INSTRUCTION def_cfa_register $rbp
+  $rdi = MOV32ri64 @_ZStL8__ioinit
+  CALL64pcrel32 target-flags(x86-plt) @_ZNSt8ios_base4InitC1Ev, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit-def $rsp, implicit-def $ssp
+  renamable $rdi = MOV64rm $rip, 1, $noreg, target-flags(x86-gotpcrel) @_ZNSt8ios_base4InitD1Ev, $noreg :: (load (s64) from got)
+  $rsi = MOV32ri64 @_ZStL8__ioinit
+  $rdx = MOV32ri64 @__dso_handle
+  CALL64pcrel32 target-flags(x86-plt) @__cxa_atexit, <regmask $bh $bl $bp $bph $bpl $bx $ebp $ebx $hbp $hbx $rbp $rbx $r12 $r13 $r14 $r15 $r12b $r13b $r14b $r15b $r12bh $r13bh $r14bh $r15bh $r12d $r13d $r14d $r15d $r12w $r13w $r14w $r15w $r12wh and 3 more...>, implicit $rsp, implicit $ssp, implicit $rdi, implicit killed $rsi, implicit killed $rdx, implicit-def $rsp, implicit-def $ssp, implicit-def dead $eax
+  $rbp = frame-destroy POP64r implicit-def $rsp, implicit $rsp
+  CFI_INSTRUCTION def_cfa $rsp, 8
+  RET 0
+
+# End machine code for function __cxx_global_var_init.
