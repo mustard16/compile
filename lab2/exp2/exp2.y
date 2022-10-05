@@ -72,7 +72,7 @@ int yylex()
             ungetc(t, stdin);
             return NUMBER;
         }
-        else if((t>='a'&&t<='z')||(t<='A'&&t>='Z')||(t=='_'))
+        else if((t>='a'&&t<='z')||(t>='A'&&t<='Z')||(t=='_'))
         {
             int ti=0;
             while((t>='a'&&t<='z')||(t>='A'&&t<='Z')||(t=='_')||(t>='0'&&t<='9'))
